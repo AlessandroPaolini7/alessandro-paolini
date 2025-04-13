@@ -2,6 +2,8 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Github, Linkedin, Mail } from "lucide-react"
 import Image from "next/image"
+// Import avatar image directly
+import avatarImage from "../../public/avatar.png"
 
 export default function Home() {
   return (
@@ -11,7 +13,7 @@ export default function Home() {
         <div className="flex flex-col items-center text-center gap-6 max-w-3xl mx-auto">
           <div className="relative w-32 h-32 rounded-full overflow-hidden">
             <Image 
-              src="/avatar.png" 
+              src={avatarImage}
               alt="Alessandro Paolini" 
               width={128} 
               height={128} 
