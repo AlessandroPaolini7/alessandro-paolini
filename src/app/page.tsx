@@ -10,7 +10,14 @@ export default function Home() {
       <section className="container mx-auto px-4 pt-20 pb-16">
         <div className="flex flex-col items-center text-center gap-6 max-w-3xl mx-auto">
           <div className="relative w-32 h-32 rounded-full overflow-hidden">
-            <Image src="/avatar.png" alt="Alessandro Paolini" width={128} height={128} className="object-cover" />
+            <Image 
+              src="/avatar.png" 
+              alt="Alessandro Paolini" 
+              width={128} 
+              height={128} 
+              className="object-cover"
+              priority
+            />
           </div>
           <div>
             <h1 className="text-4xl font-bold mb-2">Alessandro Paolini</h1>
@@ -148,7 +155,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex justify-between items-center">
-              <p className="text-gray-400">Cambridge University English Language Assessment</p>
+              <p className="text-gray-400">Cambridge Assessment English</p>
               <p className="text-gray-400 text-sm">Rosario, Argentina</p>
             </div>
             <p className="text-gray-400 text-sm mt-2">Score: 205. I also passed FCE and CAE, but this particular exam demonstrates my full mastery of English.</p>
