@@ -1,8 +1,6 @@
-// Portfolio completo con estilo profesional, transiciones y diseño refinado
 import { Card, CardContent } from "@/components/ui/card"
 import { Github, Linkedin, Mail } from "lucide-react"
 import Image from "next/image"
-// Import avatar image directly
 import avatarImage from "../../public/avatar.png"
 
 export default function Home() {
