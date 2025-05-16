@@ -1,7 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Github, Linkedin, Mail } from "lucide-react"
-import Image from "next/image"
-import avatarImage from "../../public/avatar.png"
 
 export default function Home() {
   return (
@@ -10,13 +8,12 @@ export default function Home() {
       <section className="container mx-auto px-4 pt-20 pb-16">
         <div className="flex flex-col items-center text-center gap-6 max-w-3xl mx-auto">
           <div className="relative w-32 h-32 rounded-full overflow-hidden">
-            <Image 
-              src={avatarImage}
+            <img 
+              src="/alessandro-paolini/avatar.png" 
               alt="Alessandro Paolini" 
               width={128} 
               height={128} 
-              className="object-cover"
-              priority
+              className="object-cover w-full h-full"
             />
           </div>
           <div>
@@ -35,7 +32,9 @@ export default function Home() {
             </a>
           </div>
           <p className="text-gray-400 max-w-2xl">
-          AI Engineer with a strong focus on automation and data-driven solutions. Experienced in designing intelligent workflows that streamline complex data processes. Currently working at Teramot, developing agent-based systems for data engineering. Passionate about building scalable solutions that drive real-world impact.
+          I'm an AI Engineer with a strong background in data engineering. Over the last year, I've been working on building data pipelines, deploying AI agents, and designing complex end-to-end data workflows using Python, LangChain, LangGraph, SQL, and AWS services such as Athena or Glue.
+
+I'm particularly interested in Fintech, Insurtech, and EdTech—industries where real-world challenges can be meaningfully addressed through AI, as long as they're built on solid data foundations.
           </p>
         </div>
       </section>
@@ -116,12 +115,12 @@ export default function Home() {
               Some of my deliverables were:
             </p>
             <ul className="list-disc pl-5 text-gray-400 text-sm space-y-3">
-              <li>Designed and implemented an intelligent foreign key-primary key detection system with LangChain AI agents, automating relationship discovery and improving data pipeline integrity while eliminating manual intervention.</li>
-              <li>Built a robust outlier detection system using statistical methods (distribution analysis, kurtosis) in SQL (Trino), with dynamic thresholds optimized for heavy-tailed distributions.</li>
-              <li>Developed an AI-driven data fixer agent with LangChain and LangGraph that automatically detects and corrects schema inconsistencies and data integrity issues.</li>
-              <li>Created an end-to-end AutoML pipeline for time series forecasting with natural language interface, featuring automated EDA, feature engineering (lags, seasonality), and model optimization.</li>
-              <li>Implemented a RAG pipeline with OpenAI File Search for efficient document retrieval and querying.</li>
-              <li>Built a data modeling agent using LangChain and LangGraph that interprets business requirements to automatically generate data warehouse schemas with proper joins and aggregations.</li>
+              <li>Designed and implemented an intelligent foreign key-primary key detection system leveraging AI agents within LangChain. By automating relationship discovery, the system significantly improved data integrity and consistency across core data pipelines, increasing accuracy by 40% while removing manual intervention.</li>
+              <li>Designed and implemented an outlier detection algorithm leveraging statistical methods, including probability distribution analysis, kurtosis evaluation, and sample-size-adjusted thresholds, implemented directly in SQL (Trino). The system dynamically adapts detection thresholds based on data distribution. This optimization was particularly crucial for heavy-tailed distributions.</li>
+              <li>Designed and implemented an AI-driven data fixer agent leveraging LangChain and LangGraph. This agent detects and corrects schema inconsistencies and data integrity issues, ensuring cleaner and more reliable datasets for downstream analytics.</li>
+              <li>Designed and developed from 0-1 an AutoML pipeline for time series forecasting that allows users to request and generate predictions using natural language, using AI agents to make EDAs, feature engineering and training models. The system dynamically extracts and engineers temporal features such as lags, rolling statistics, and seasonal components, optimizing them based on dataset characteristics. It benchmarks multiple forecasting models using Random Search for hyperparameter optimization.</li>
+              <li>Designed and implemented a RAG pipeline leveraging OpenAI File Search to enable efficient retrieval of documents.</li>
+              <li>Designed and implemented a data modeling agent, using LangChain and LangGraph, to interpret business requirements in order to generate a data warehouse matching all instructions such as joins, aggregations, filters with an accuracy of 95%.</li>
             </ul>
           </div>
         </div>

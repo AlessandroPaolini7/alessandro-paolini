@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Alessandro Paolini",
   description:
-    "Website of Alessandro Paolini, AI Engineer focused on intelligent automation and data-driven solutions.",
+    "Alessandro Paolini. AI & Data Engineer",
   keywords: ["AI Engineer", "Data Engineering", "Machine Learning", "LangChain", "LangGraph", "Automation"],
   authors: [{ name: "Alessandro Paolini" }],
   creator: "Alessandro Paolini",
